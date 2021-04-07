@@ -4,11 +4,14 @@ import java.io.File;
 import java.io.IOException;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
+import org.semanticweb.owlapi.model.AddAxiom;
 import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLIndividual;
+import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
@@ -36,6 +39,8 @@ public class App
             OWLOntology ontology = loadOntologyFromFile(PEOPLE_AND_PETS, manager);
             OWLDataFactory dataFactory = manager.getOWLDataFactory();
             addClassIndividual(ontology, manager, dataFactory, "Ana", "Person");
+            addClassIndividual(ontology, manager, dataFactory, "Benji", "Dog");
+            addObjectPropertyAssertion(ontology, manager, dataFactory, "Ana", "Benji", "hasPet");
             saveOntology("C:/Users/lagarnicachavira/Documents/Repos/owl-samples/ontologies/PeopleAndPetsNew.owl", manager, ontology);
         } catch (OWLOntologyCreationException | OWLOntologyStorageException | IOException e) {
             e.printStackTrace();
@@ -93,12 +98,29 @@ public class App
      * @param className
      * @return
      */
-    public static OWLOntology addClassIndividual(OWLOntology ontology, OWLOntologyManager manager, OWLDataFactory dataFactory, String subjectName, String className){
+    public static void addClassIndividual(OWLOntology ontology, OWLOntologyManager manager, OWLDataFactory dataFactory, String subjectName, String className){
         OWLIndividual subject = dataFactory.getOWLNamedIndividual(IRI.create(BASE + "#" + subjectName));
         OWLClass someClass = dataFactory.getOWLClass(IRI.create(BASE + "#" + className));
         OWLClassAssertionAxiom ax = dataFactory.getOWLClassAssertionAxiom(someClass, subject);
         manager.addAxiom(ontology, ax);
-        return ontology;
+    }
+
+    /**
+     * Add object property assertion (between individuals)
+     * @param ontology
+     * @param manager
+     * @param dataFactory
+     * @param individual_1
+     * @param individual_2
+     * @param property
+     */
+    public static void addObjectPropertyAssertion(OWLOntology ontology, OWLOntologyManager manager, OWLDataFactory dataFactory, String individual_1, String individual_2, String property){
+        OWLIndividual i1 = dataFactory.getOWLNamedIndividual(IRI.create(BASE + "#" + individual_1));
+        OWLIndividual i2 = dataFactory.getOWLNamedIndividual(IRI.create(BASE + "#" + individual_2));
+        OWLObjectProperty o = dataFactory.getOWLObjectProperty(IRI.create(BASE + "#" + property));
+
+        OWLAxiom assertion = dataFactory.getOWLObjectPropertyAssertionAxiom(o, i1, i2);
+        manager.addAxiom(ontology, assertion);
     }
 
 

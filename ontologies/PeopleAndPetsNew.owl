@@ -16,6 +16,9 @@ AnnotationProperty: rdfs:label
 Datatype: rdfs:Literal
 
     
+ObjectProperty: <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#hasPet>
+
+    
 Class: <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Animal>
 
     DisjointWith: 
@@ -122,5 +125,14 @@ Individual: <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Ana>
 
     Types: 
         <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Person>
+    
+    Facts:  
+     <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#hasPet>  <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Benji>
+    
+    
+Individual: <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Benji>
+
+    Types: 
+        <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Dog>
     
     
