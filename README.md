@@ -1,3 +1,5 @@
+# OWL API sample code
+
 Maven Command List:
 
 // create empty maven project with quick start skeleton
@@ -6,9 +8,8 @@ Maven Command List:
 // clean package build from scratch
 > mvn clean package
 
-// run the App.java
-go to target/classes
->java cybershare.utep.edu.App
+// run the App.java will require to link libraries can do manually, via IDE or build a jar with included libraries
+
 
 
 References:
