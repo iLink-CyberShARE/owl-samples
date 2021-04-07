@@ -14,6 +14,6 @@ Maven Command List:
 
 References:
 
-https://github.com/owlcs/owlapi/wiki/Documentation
-
-https://github.com/phillord/owl-api/blob/master/contract/src/test/java/org/coode/owlapi/examples/Examples.java
+> https://github.com/owlcs/owlapi/wiki/Documentation  (owl api documentation)
+> http://owlapi.sourceforge.net/owled2011_tutorial.pdf (tutorial with owl api)
+> https://github.com/phillord/owl-api/blob/master/contract/src/test/java/org/coode/owlapi/examples/Examples.java (broad examples with owl api)
