@@ -1,0 +1,119 @@
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl>
+
+
+AnnotationProperty: rdfs:label
+
+    
+Datatype: rdfs:Literal
+
+    
+Class: <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Animal>
+
+    DisjointWith: 
+        <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Person>
+    
+    
+Class: <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Cat>
+
+    Annotations: 
+        rdfs:label "cat"^^rdfs:Literal
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Animal>
+    
+    DisjointWith: 
+        <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Dog>, <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Rabbit>
+    
+    
+Class: <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#CatOwner>
+
+    Annotations: 
+        rdfs:label "cat owner"^^rdfs:Literal
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Person>
+    
+    
+Class: <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Dog>
+
+    Annotations: 
+        rdfs:label "dog"^^rdfs:Literal
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Animal>
+    
+    DisjointWith: 
+        <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Cat>, <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Rabbit>
+    
+    
+Class: <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#DogOwner>
+
+    Annotations: 
+        rdfs:label "dog owner"^^rdfs:Literal
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Person>
+    
+    
+Class: <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#ManyPetOwner>
+
+    Annotations: 
+        rdfs:label "many pets owner"^^rdfs:Literal
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Person>
+    
+    
+Class: <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#OnePetOwner>
+
+    Annotations: 
+        rdfs:label "one pet owner"^^rdfs:Literal
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Person>
+    
+    
+Class: <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Person>
+
+    DisjointWith: 
+        <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Animal>
+    
+    
+Class: <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#PetOwner>
+
+    Annotations: 
+        rdfs:label "pet owner"^^rdfs:Literal
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Person>
+    
+    
+Class: <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Rabbit>
+
+    Annotations: 
+        rdfs:label "rabbit"^^rdfs:Literal
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Animal>
+    
+    DisjointWith: 
+        <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Cat>, <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Dog>
+    
+    
+Class: <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#RabbitOwner>
+
+    Annotations: 
+        rdfs:label "rabbit owner"^^rdfs:Literal
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/nvillanuevarosales/people-pets.owl#Person>
+    
+    

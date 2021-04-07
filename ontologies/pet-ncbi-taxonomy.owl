@@ -1,0 +1,421 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://sadi-ontology-semanticscience.org/pet-ncbi-taxonomy.owl#"
+     xml:base="http://sadi-ontology-semanticscience.org/pet-ncbi-taxonomy.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:name="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name="
+     xmlns:ncbi="http://sadi-ontology-semanticscience.org/pet-taxonomy.owl#ncbi:"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Canis="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Canis+"
+     xmlns:Felis="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Felis+"
+     xmlns:lupus="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Canis+lupus+"
+     xmlns:name2="http://sadi-ontology-semanticscience.org/pet-ncbi-taxonomy.owl#http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name="
+     xmlns:Cellular="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Cellular+"
+     xmlns:Oryctolagus="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Oryctolagus+"
+     xmlns:pet-taxonomy="http://sadi-ontology-semanticscience.org/pet-taxonomy.owl#">
+    <owl:Ontology rdf:about="http://myclass.examples.org/pet-ncbi-taxonomy.owl">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology that contains the NCBI taxonomy for the pets ontology used in the class example.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sadi-ontology-semanticscience.org/pet-taxonomy.owl#commonName -->
+
+    <owl:AnnotationProperty rdf:about="http://sadi-ontology-semanticscience.org/pet-taxonomy.owl#commonName"/>
+    
+
+
+    <!-- http://sadi-ontology-semanticscience.org/pet-taxonomy.owl#synonym -->
+
+    <owl:AnnotationProperty rdf:about="http://sadi-ontology-semanticscience.org/pet-taxonomy.owl#synonym"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Amniota -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Amniota">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Tetrapoda"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amniota</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Bilateria -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Bilateria">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Eumetazoa"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bilateria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Canidae -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Canidae">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Caniformia"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Canidae</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Caniformia -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Caniformia">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Carnivora"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caniformia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Canis -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Canis">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Canidae"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Canis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Carnivora -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Carnivora">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Laurasiatheria"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carnivora</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Chordata -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Chordata">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Deuterostomia"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chordata</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Coelomata -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Coelomata">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Bilateria"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coelomata</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Craniata -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Craniata">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Chordata"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Craniata</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Deuterostomia -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Deuterostomia">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Coelomata"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterostomia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Euarchontoglires -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Euarchontoglires">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Eutheria"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euarchontoglires</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Eukaryota -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Eukaryota">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Cellular+organisms"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eukaryota</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Eumetazoa -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Eumetazoa">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Metazoa"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eumetazoa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Euteleostomi -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Euteleostomi">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Teleostomi"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euteleostomi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Eutheria -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Eutheria">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Theria"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eutheria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Felidae -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Felidae">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Feliformia"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felidae</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Feliformia -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Feliformia">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Carnivora"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feliformia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Felinae -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Felinae">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Felidae"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felinae</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Felis -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Felis">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Felinae"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Glires -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Glires">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Euarchontoglires"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glires</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Gnathostomata -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Gnathostomata">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Vertebrata"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gnathostomata</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Lagomorpha -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Lagomorpha">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Glires"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lagomorpha</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Laurasiatheria -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Laurasiatheria">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Eutheria"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laurasiatheria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Leporidae -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Leporidae">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Lagomorpha"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leporidae</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Mammalia -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Mammalia">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Amniota"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mammalia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Metazoa -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Metazoa">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Opisthokonta"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metazoa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Opisthokonta -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Opisthokonta">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Eukaryota"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Opisthokonta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Oryctolagus -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Oryctolagus">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Leporidae"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oryctolagus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Sarcopterygii -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Sarcopterygii">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Euteleostomi"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sarcopterygii</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Teleostomi -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Teleostomi">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Gnathostomata"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teleostomi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Tetrapoda -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Tetrapoda">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Sarcopterygii"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tetrapoda</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Theria -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Theria">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Mammalia"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Theria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Vertebrata -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Vertebrata">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Craniata"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vertebrata</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Canis+lupus -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Canis+lupus">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Canis"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Canis lupus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Canis+lupus+familiaris -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Canis+lupus+familiaris">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Canis+lupus"/>
+        <pet-taxonomy:commonName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dogs</pet-taxonomy:commonName>
+        <pet-taxonomy:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Canis domesticus</pet-taxonomy:synonym>
+        <pet-taxonomy:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Canis familiaris</pet-taxonomy:synonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Canis lupus familiaris</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Cellular+organisms -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Cellular+organisms">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cellular organisms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Felis+catus -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Felis+catus">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Felis"/>
+        <pet-taxonomy:commonName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cat</pet-taxonomy:commonName>
+        <pet-taxonomy:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felis domesticus</pet-taxonomy:synonym>
+        <pet-taxonomy:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">domestic cat</pet-taxonomy:synonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felis catus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Oryctolagus+cuniculus -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Oryctolagus+cuniculus">
+        <rdfs:subClassOf rdf:resource="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Oryctolagus"/>
+        <pet-taxonomy:commonName>domestic rabbit</pet-taxonomy:commonName>
+        <pet-taxonomy:commonName>rabbit</pet-taxonomy:commonName>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oryctolagus cuniculus</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
