@@ -3,7 +3,7 @@
 Maven Command List:
 
 // create empty maven project with quick start skeleton
-> mvn archetype:generate "-DgroupId=cybershare.utep.edu" "-DartifactId=owl-sample-1" "-DinteractiveMode=false"
+> mvn archetype:generate "-DgroupId=company.sudomain.com" "-DartifactId=hello-world" "-DinteractiveMode=false"
 
 // clean package build from scratch
 > mvn clean package
